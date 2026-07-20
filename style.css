@@ -1,42 +1,57 @@
-/* --- Global Styles --- */
+:root {
+    --bg-color: #ffffff;
+    --card-bg: #fafafa;
+    --text-color: #333333;
+    --heading-color: #111111;
+    --subtext-color: #888888;
+    --border-color: #eaeaea;
+    --link-color: #2b6cb0;
+}
+
+body.dark-theme {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --heading-color: #ffffff;
+    --subtext-color: #aaaaaa;
+    --border-color: #333333;
+    --link-color: #63b3ed;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif; /* A simple, clean sans-serif font */
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
-    color: #333;
-    background-color: #fff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-h1, h2, h3, .site-title {
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-strong {
-    font-weight: 700;
-}
-
-/* --- Header Styles --- */
+/* Header & Nav */
 header {
-    border-bottom: 1px solid #eaeaea;
-    padding: 10px 0;
-    background-color: #fff;
-    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px 0;
+    background-color: var(--bg-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px; /* Adjust as needed for overall width */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .site-title {
+    font-weight: 700;
+    letter-spacing: 1px;
     font-size: 1.1rem;
-    color: #444;
+    color: var(--heading-color);
+    text-decoration: none;
 }
 
 nav ul {
@@ -44,15 +59,15 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
 }
 
 nav li {
-    margin: 0 10px;
-    border-left: 1px solid #eaeaea; /* Vertical separator lines */
-    padding-left: 15px;
+    margin: 0 8px;
+    border-left: 1px solid var(--border-color);
+    padding-left: 12px;
 }
 
-/* Remove the left border from the first item */
 nav li:first-child {
     border-left: none;
     padding-left: 0;
@@ -60,104 +75,166 @@ nav li:first-child {
 
 nav a {
     text-decoration: none;
-    color: #888;
-    font-size: 0.9rem;
-    text-transform: uppercase;
+    color: var(--subtext-color);
+    font-size: 0.85rem;
+    font-weight: 600;
     letter-spacing: 1px;
-    padding-bottom: 5px;
 }
 
-nav a:hover {
-    color: #333;
+nav a:hover, nav a.active {
+    color: var(--heading-color);
 }
 
-nav a.active {
-    color: #333;
-    /* Optional: active state indicator */
-    border-bottom: 2px solid #555;
+/* Social Header Icons */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.theme-toggle {
-    font-size: 1.2rem;
+.social-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.social-icon {
+    color: var(--subtext-color);
+    width: 18px;
+    height: 18px;
+    transition: color 0.2s ease;
+}
+
+.social-icon:hover {
+    color: var(--heading-color);
+}
+
+.theme-toggle-btn {
+    background: none;
+    border: none;
     cursor: pointer;
-    color: #555;
+    font-size: 1.1rem;
+    color: var(--heading-color);
+    padding: 4px;
+    display: flex;
+    align-items: center;
 }
 
-/* --- Main Content Styles --- */
+/* Main Layout */
 main {
-    max-width: 900px; /* Thinner content area for better readability */
+    max-width: 850px;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
 .page-intro {
     text-align: center;
-    margin-bottom: 60px;
-}
-
-.page-intro h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-}
-
-.page-intro .word-count {
-    color: #999;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-}
-
-.main-content {
-    background-color: #fafafa;
-    border-radius: 8px;
-    padding: 40px;
-    border: 1px solid #eaeaea;
-}
-
-.sub-section {
     margin-bottom: 40px;
 }
 
-.sub-section h2 {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #444;
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Space between emoji and text */
+.page-intro h1 {
+    font-size: 2.2rem;
+    color: var(--heading-color);
+    margin-bottom: 8px;
+    letter-spacing: 2px;
 }
 
-.main-content p {
-    font-size: 1rem;
+.word-count {
+    color: var(--subtext-color);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.main-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 40px;
+    border: 1px solid var(--border-color);
+}
+
+/* Profile Photo Styling */
+.hero-photo-wrapper {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.hero-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--border-color);
+}
+
+.section-title {
+    font-size: 1.1rem;
+    color: var(--heading-color);
     margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .separator {
     border: 0;
-    border-top: 1px solid #eaeaea;
-    margin: 40px 0;
+    border-top: 1px solid var(--border-color);
+    margin: 35px 0;
 }
 
-/* --- Responsive Layout (Simple) --- */
+a {
+    color: var(--link-color);
+}
+
+/* Footer Profile Section */
+.page-footer-profile {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.footer-photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border-color);
+    margin-bottom: 10px;
+}
+
+.footer-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--heading-color);
+    margin: 0;
+}
+
+.footer-email {
+    font-size: 0.9rem;
+    color: var(--subtext-color);
+    margin-top: 4px;
+}
+
+.footer-email a {
+    color: var(--subtext-color);
+    text-decoration: none;
+}
+
+.footer-email a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
-        text-align: center;
+        gap: 15px;
     }
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 15px;
     }
     nav li {
-        margin: 5px;
+        margin: 4px;
         border-left: none;
         padding-left: 0;
-    }
-    main {
-        padding: 20px 10px;
-    }
-    .main-content {
-        padding: 20px;
     }
 }
