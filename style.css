@@ -1,1 +1,163 @@
+/* --- Global Styles --- */
+body {
+    font-family: 'Open Sans', sans-serif; /* A simple, clean sans-serif font */
+    margin: 0;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
 
+h1, h2, h3, .site-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* --- Header Styles --- */
+header {
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Adjust as needed for overall width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-title {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+    border-left: 1px solid #eaeaea; /* Vertical separator lines */
+    padding-left: 15px;
+}
+
+/* Remove the left border from the first item */
+nav li:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #888;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+nav a.active {
+    color: #333;
+    /* Optional: active state indicator */
+    border-bottom: 2px solid #555;
+}
+
+.theme-toggle {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #555;
+}
+
+/* --- Main Content Styles --- */
+main {
+    max-width: 900px; /* Thinner content area for better readability */
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.page-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.page-intro .word-count {
+    color: #999;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.main-content {
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 40px;
+    border: 1px solid #eaeaea;
+}
+
+.sub-section {
+    margin-bottom: 40px;
+}
+
+.sub-section h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between emoji and text */
+}
+
+.main-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.separator {
+    border: 0;
+    border-top: 1px solid #eaeaea;
+    margin: 40px 0;
+}
+
+/* --- Responsive Layout (Simple) --- */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    nav li {
+        margin: 5px;
+        border-left: none;
+        padding-left: 0;
+    }
+    main {
+        padding: 20px 10px;
+    }
+    .main-content {
+        padding: 20px;
+    }
+}
