@@ -5,29 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William's Portfolio - About Me</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Optional: Add a simple font similar to the one in the image -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header>
         <div class="header-container">
-            <div class="site-title">WILLIAM'S PORTFOLIO</div>
+            <a href="index.html" class="site-title">WILLIAM'S PORTFOLIO</a>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">ABOUT</a></li>
-                    <li><a href="#">RESUME</a></li>
-                    <li><a href="#">PROJECTS</a></li>
-                    <li><a href="#">ROBOTS</a></li>
-                    <li><a href="#">POINT CLOUDS</a></li>
-                    <li><a href="#">STATS</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">TERMINAL</a></li>
+                    <li><a href="resume.html">RESUME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="robots.html">ROBOTS</a></li>
+                    <li><a href="point-clouds.html">POINT CLOUDS</a></li>
                 </ul>
             </nav>
-            <div class="theme-toggle">
-                <!-- Using a crescent moon emoji 🌙 -->
-                <span>&#127769;</span>
+            <div class="header-actions">
+                <div class="social-links">
+                    <a href="mailto:your.email@example.com" title="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/yourusername" target="_blank" title="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://scholar.google.com/citations?user=yourid" target="_blank" title="Google Scholar" class="social-icon"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/yourusername" target="_blank" title="Twitter / X" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://youtube.com/@yourusername" target="_blank" title="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <span id="theme-icon">🌙</span>
+                </button>
             </div>
         </div>
     </header>
@@ -38,12 +44,17 @@
             <p class="word-count">(IN ABOUT 654 WORDS)</p>
         </section>
 
-        <section class="main-content">
+        <section class="main-card">
+            <!-- Profile photo placed right above the About Me section -->
+            <div class="hero-photo-wrapper">
+                <img src="images/profile.jpg" alt="William's Profile Picture" class="hero-photo">
+            </div>
+
             <div class="sub-section">
-                <h2><!-- 👋 Emoji as HTML Entity -->&#128075; ABOUT ME</h2>
+                <h2 class="section-title">👋 ABOUT ME</h2>
                 <p>
-                    Hey, I’m <strong>William</strong> — a robotics engineer and Ph.D. student designing intelligent systems that move through the world (and sometimes the forest <!-- 🌲 Emoji as HTML Entity -->&#127794; ) on their own.
-                </    p>
+                    Hey, I’m <strong>William</strong> — a robotics engineer and Ph.D. student designing intelligent systems that move through the world (and sometimes the forest 🌲) on their own.
+                </p>
                 <p>
                     My focus is on real-time autonomy, sensor fusion, and embedded AI, especially for rugged, off-road, and edge-case environments.
                 </p>
@@ -51,18 +62,19 @@
                     I've worked across industry and academia, with engineering and research experience at <strong>McGill, Tesla, CTA (BRP), INO,</strong> and <strong>ABB.</strong> Whether I’m writing firmware for robots, training deep learning models, or spinning up a new PCB, I’m always chasing the magic of turning ideas into working systems.
                 </p>
                 <p>
-                    Right now, I’m building modular autonomy frameworks for multi-vehicle platforms, contributing to a startup developing next-gen EV batteries <!-- ⚡ Emoji as HTML Entity -->&#9889;, and experimenting with how LLMs can control robots out in the wild. If that sounds like your kind of thing, I’d love to chat.
+                    Right now, I’m building modular autonomy frameworks for multi-vehicle platforms, contributing to a startup developing next-gen EV batteries ⚡, and experimenting with how LLMs can control robots out in the wild. If that sounds like your kind of thing, I’d love to chat.
                 </p>
             </div>
 
             <hr class="separator">
 
             <div class="sub-section">
-                <h2><!-- 🧠 Emoji as HTML Entity -->&#129504; SOME BACKSTORY</h2>
-                <!-- Empty content area, matching the image -->
+                <h2 class="section-title">🧠 SOME BACKSTORY</h2>
+                <p>Add your personal backstory or career journey content here...</p>
             </div>
         </section>
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
