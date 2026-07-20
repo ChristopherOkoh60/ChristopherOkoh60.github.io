@@ -129,13 +129,13 @@ main {
 
 .page-intro {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .page-intro h1 {
     font-size: 2.2rem;
     color: var(--heading-color);
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     letter-spacing: 2px;
 }
 
