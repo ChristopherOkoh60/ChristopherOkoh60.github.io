@@ -155,7 +155,7 @@ main {
 /* Profile Photo Styling */
 .hero-photo-wrapper {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 .hero-photo {
@@ -169,7 +169,7 @@ main {
 .section-title {
     font-size: 1.1rem;
     color: var(--heading-color);
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
