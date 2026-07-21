@@ -294,6 +294,7 @@ a {
 
 .cv-nav a:hover {
     color: var(--heading-color);
+    border-left: 3px solid #2b6cb0;
 }
 
 .cv-nav a.active {
