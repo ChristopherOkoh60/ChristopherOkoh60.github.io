@@ -129,7 +129,7 @@ main {
 
 .page-intro {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .page-intro h1 {
@@ -169,7 +169,7 @@ main {
 .section-title {
     font-size: 1.1rem;
     color: var(--heading-color);
-    margin-bottom: 1px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
