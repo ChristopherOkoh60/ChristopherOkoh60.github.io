@@ -75,8 +75,8 @@ nav li:first-child {
 }
 
 nav a {
-    text-decoration: none !important;
-    color: #ff1493 !important;
+    text-decoration: none;
+    color: #ff1493;
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 1px;
