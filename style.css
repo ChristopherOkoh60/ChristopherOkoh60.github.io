@@ -297,9 +297,9 @@ a {
 }
 
 .cv-nav a.active {
-    color: #ff1493 !important;
+    color: #2B6CB0 !important;
     font-weight: 700;
-    border-left: 3px solid #ff1493 !important;
+    border-left: 3px solid #2B6CB0 !important;
 }
 
 /* Right Content Area */
@@ -354,7 +354,7 @@ a {
 .pink-link, 
 .pink-link:link, 
 .pink-link:visited {
-    color: #b83280 !important; /* Deep pink matching the reference image */
+    color: #2B6CB0 !important; /* Deep pink matching the reference image */
     text-decoration: none !important;
 }
 
