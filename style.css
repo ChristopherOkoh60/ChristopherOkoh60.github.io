@@ -354,15 +354,16 @@ a {
     line-height: 1.5;
 }
 
-/* Magenta / Pink Accent Links */
-.pink-link, 
-.pink-link:link, 
-.pink-link:visited {
-    color: #2B6CB0 !important; /* Deep pink matching the reference image */
+/* Removes underline by default */
+.blue-link, 
+.blue-link:link, 
+.blue-link:visited {
+    color: #2b6cb0;
     text-decoration: none !important;
 }
 
-.pink-link:hover {
+/* Adds underline only on hover */
+.blue-link:hover {
     text-decoration: underline !important;
 }
 
