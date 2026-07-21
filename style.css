@@ -73,23 +73,16 @@ nav li:first-child {
     padding-left: 0;
 }
 
-/* Updated navigation link styling to fix color and hover underline */
 nav a, nav a:link, nav a:visited {
     text-decoration: none !important;
-    border-bottom: none !important;
-    color: #ff1493 !important; /* Deep Pink */
+    color: var(--subtext-color);
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-nav a:hover {
-    text-decoration: underline !important; /* Underline strictly on hover */
-    color: #c71585 !important; /* Slightly darker deep pink on hover */
-}
-
-nav a.active, nav a.active:visited {
-    color: #ff1493 !important;
+nav a:hover, nav a.active {
+    color: var(--heading-color);
 }
 
 /* Social Header Icons */
@@ -132,6 +125,14 @@ main {
     max-width: 850px;
     margin: 0 auto;
     padding: 40px 20px;
+}
+
+/* Styling applied strictly to paragraph write-ups in the body */
+main p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
 }
 
 .page-intro {
