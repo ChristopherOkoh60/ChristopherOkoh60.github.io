@@ -73,7 +73,7 @@ nav li:first-child {
     padding-left: 0;
 }
 
-nav a, nav a:link, nav a:visited {
+nav a {
     text-decoration: none !important;
     color: var(--subtext-color);
     font-size: 0.85rem;
@@ -125,14 +125,6 @@ main {
     max-width: 850px;
     margin: 0 auto;
     padding: 40px 20px;
-}
-
-/* Styling applied strictly to paragraph write-ups in the body */
-main p {
-    color: var(--text-color);
-    font-size: 1rem;
-    line-height: 1.7;
-    margin-bottom: 1.2rem;
 }
 
 .page-intro {
