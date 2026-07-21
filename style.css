@@ -145,6 +145,7 @@ main {
     color: var(--heading-color);
     margin-bottom: 10px;
     letter-spacing: 5px;
+    text-decoration: none;
 }
 
 .word-count {
