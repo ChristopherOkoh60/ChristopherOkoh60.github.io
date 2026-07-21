@@ -25,6 +25,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none !important;
 }
 
 /* Header & Nav */
@@ -90,7 +91,7 @@ nav a:hover {
 
 nav a.active {
     color: #ff1493;
-    border-bottom: none !important;
+    border-bottom: none;
 }
 
 /* Social Header Icons */
