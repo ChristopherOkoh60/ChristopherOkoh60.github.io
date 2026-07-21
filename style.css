@@ -189,8 +189,11 @@ a {
 .page-footer-profile {
     margin-top: 60px;
     padding-top: 30px;
+    padding_bottom: 40px;
     border-top: 1px solid var(--border-color);
     text-align: center;
+    width: 100%;
+    clear: both;
 }
 
 .footer-photo {
@@ -199,7 +202,8 @@ a {
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--border-color);
-    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
+    display: block;
 }
 
 .footer-name {
@@ -207,6 +211,7 @@ a {
     font-size: 1.1rem;
     color: var(--heading-color);
     margin: 0;
+    text-align: center;
 }
 
 .footer-email {
@@ -263,7 +268,7 @@ a {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 4px;
 }
 
 .cv-nav li {
@@ -272,14 +277,9 @@ a {
     margin: 0;
 }
 
-.cv-nav a, 
-.cv-nav a:link, 
-.cv-nav a:visited {
-    text-decoration: none;
-    color: var(--heading-color);
-    font-weight: 700;
-    font-size: 0.95rem;
-    transition: color 0.2s ease;
+.cv-nav a {
+    display: block;
+    padding: 2px 0;
 }
 
 .cv-nav a:hover, 
