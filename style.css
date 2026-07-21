@@ -75,22 +75,14 @@ nav li:first-child {
 
 nav a {
     text-decoration: none;
-    color: #ff1493;
+    color: var(--subtext-color);
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 1px;
-    padding-bottom: 5px;
-    transition: color 0.2s ease;
 }
 
-nav a:hover {
-    text-decoration: underline;
-    color: #c71585;
-}
-
-nav a.active {
-    color: #ff1493;
-    border-bottom: none;
+nav a:hover, nav a.active {
+    color: var(--heading-color);
 }
 
 /* Social Header Icons */
