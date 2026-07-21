@@ -321,6 +321,10 @@ a {
     margin-bottom: 30px;
 }
 
+.cv-card:last-child {
+    margin-bottom: 0;
+}
+
 .cv-card-title {
     font-size: 1.8rem;
     font-weight: 400;
