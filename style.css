@@ -258,7 +258,7 @@ a {
 /* Left Sidebar Navigation */
 .cv-sidebar {
     position: sticky;
-    top: 80px;
+    top: 40px;
     align-self: start;
 }
 
