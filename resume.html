@@ -107,5 +107,36 @@
         </footer>
 
     <script src="script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.cv-nav a');
+    const sections = document.querySelectorAll('.cv-card');
+
+    const observerOptions = {
+      root: null,
+      // Triggers when a section crosses the upper-middle of the screen
+      rootMargin: '-20% 0px -60% 0px', 
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const currentId = entry.target.getAttribute('id');
+          
+          navLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${currentId}`) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+  });
+</script>
 </body>
 </html>
