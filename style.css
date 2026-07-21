@@ -29,7 +29,7 @@ body {
 
 /* Header & Nav */
 header {
-    border-bottom: none !important;
+    border-bottom: 1px solid var(--border-color);
     padding: 12px 0;
     background-color: var(--bg-color);
     position: sticky;
@@ -73,16 +73,23 @@ nav li:first-child {
     padding-left: 0;
 }
 
-nav a {
+/* Updated navigation link styling to fix color and hover underline */
+nav a, nav a:link, nav a:visited {
     text-decoration: none !important;
-    color: var(--subtext-color);
+    border-bottom: none !important;
+    color: #ff1493 !important; /* Deep Pink */
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-nav a:hover, nav a.active {
-    color: var(--heading-color);
+nav a:hover {
+    text-decoration: underline !important; /* Underline strictly on hover */
+    color: #c71585 !important; /* Slightly darker deep pink on hover */
+}
+
+nav a.active, nav a.active:visited {
+    color: #ff1493 !important;
 }
 
 /* Social Header Icons */
