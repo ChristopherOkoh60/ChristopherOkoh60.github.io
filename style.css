@@ -135,8 +135,8 @@ main {
 .page-intro h1 {
     font-size: 2.2rem;
     color: var(--heading-color);
-    margin-bottom: 0.1px;
-    letter-spacing: 0.1px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
 }
 
 .word-count {
