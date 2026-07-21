@@ -275,7 +275,7 @@ a {
 .cv-nav a, 
 .cv-nav a:link, 
 .cv-nav a:visited {
-    text-decoration: none !important;
+    text-decoration: none;
     color: var(--heading-color);
     font-weight: 700;
     font-size: 0.95rem;
