@@ -51,7 +51,7 @@ header {
     letter-spacing: 1px;
     font-size: 1.1rem;
     color: var(--heading-color);
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 nav ul {
@@ -74,7 +74,7 @@ nav li:first-child {
 }
 
 nav a {
-    text-decoration: none !important;
+    text-decoration: none;
     color: var(--subtext-color);
     font-size: 0.85rem;
     font-weight: 600;
