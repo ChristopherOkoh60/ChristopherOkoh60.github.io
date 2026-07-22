@@ -198,14 +198,62 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.cv-nav a');
+    const sections = document.querySelectorAll('.cv-card');
+    
+    // Flag to pause the scroll observer when a link is clicked
+    let isClickScrolling = false;
 
+    // 1. Intersection Observer for Scrollspy
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -60% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      // Skip observer logic if scrolling was triggered by a link click
+      if (isClickScrolling) return;
+
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const currentId = entry.target.getAttribute('id');
+          navLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${currentId}`) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+
+    // 2. Click Handler for Distant Jump Navigation
     navLinks.forEach(link => {
-      link.addEventListener('click', function() {
-        // Remove active class from all links
-        navLinks.forEach(l => l.classList.remove('active'));
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
         
-        // Add active class to clicked link
-        this.classList.add('active');
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+          // Immediately set active class on clicked item
+          navLinks.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+
+          // Pause scrollspy observer during animation
+          isClickScrolling = true;
+
+          // Scroll directly to the section
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+
+          // Re-enable scrollspy observer after smooth scroll completes (~800ms)
+          setTimeout(() => {
+            isClickScrolling = false;
+          }, 800);
+        }
       });
     });
   });
