@@ -484,3 +484,19 @@ a {
     border-radius: 4px;
     white-space: nowrap; /* Keeps date text on one line */
 }
+
+.location-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 10px;
+    color: var(--subtext-color, #666666);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* Optional: match icon color to your blue or subtext theme */
+.location-tag i,
+.location-tag svg {
+    color: #2B6CB0; /* Uses your established blue color */
+}
