@@ -457,3 +457,30 @@ a {
     border-top: 1px solid var(--border-color);
     margin: 25px 0;
 }
+
+/* Flex container aligns children side-by-side */
+.volunteer-header {
+    display: flex;
+    align-items: center; /* Centers badge and title vertically */
+    gap: 15px;            /* Adds space between badge and title */
+    margin-bottom: 6px;
+}
+
+/* Ensure margins on the heading don't break line height */
+.volunteer-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2B6CB0; /* Your established blue */
+    margin: 0;      /* Removes default h3 top/bottom margin */
+}
+
+/* Base style for the badge */
+.date-badge {
+    background-color: #2B6CB0;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    white-space: nowrap; /* Keeps date text on one line */
+}
