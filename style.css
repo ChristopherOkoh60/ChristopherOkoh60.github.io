@@ -391,3 +391,69 @@ a {
         row-gap: 8px;
     }
 }
+
+/* Work Section Specific Styling */
+.work-item {
+    margin-bottom: 30px;
+}
+
+.work-item:last-child {
+    margin-bottom: 0;
+}
+
+.work-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+}
+
+/* Date Pill Badge */
+.date-badge {
+    background-color: #2B6CB0; /* Uses your established blue color */
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+/* Job Title using the established Blue */
+.job-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2B6CB0; 
+    margin: 0;
+}
+
+.job-company {
+    font-weight: 600;
+    color: var(--heading-color);
+    margin: 4px 0;
+}
+
+.job-description {
+    color: var(--text-color);
+    margin: 4px 0 12px 0;
+}
+
+/* Bullet list styling */
+.job-bullets {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.job-bullets li {
+    color: var(--text-color);
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+/* Subtle separator between work entries */
+.card-separator {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 25px 0;
+}
