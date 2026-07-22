@@ -485,18 +485,66 @@ a {
     white-space: nowrap; /* Keeps date text on one line */
 }
 
+/* Container holding left and right columns */
+.education-item {
+    display: grid;
+    grid-template-columns: 180px 1fr; /* 180px for date/location, rest for details */
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 25px;
+}
+
+/* Left Column Styling: Stack date badge and location vertically */
+.edu-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px; /* Space between badge and location tag */
+}
+
+/* Right Column Styling: Stack degree, university, and field vertically */
+.edu-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Styling Adjustments */
+.degree-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2B6CB0; /* Established blue */
+    margin: 0;
+    line-height: 1.2;
+}
+
+.university-name {
+    font-weight: 600;
+    color: var(--heading-color);
+    margin: 0;
+}
+
+.field-of-study {
+    color: var(--text-color);
+    margin: 0;
+}
+
 .location-tag {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
-    margin-left: 10px;
+    gap: 5px;
     color: var(--subtext-color, #666666);
-    font-size: 0.9rem;
-    font-weight: 400;
+    font-size: 0.85rem;
 }
 
-/* Optional: match icon color to your blue or subtext theme */
-.location-tag i,
-.location-tag svg {
-    color: #2B6CB0; /* Uses your established blue color */
+.location-tag i {
+    color: #2B6CB0;
+}
+
+/* Responsive breakpoint for mobile screens */
+@media (max-width: 600px) {
+    .education-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
 }
