@@ -768,7 +768,7 @@ a {
 .skills-grid {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     
     /* 1. Indent from the left to match the titles/bullets above */
     padding-left: 0; /* Change to match your standard section padding if you have any */
@@ -799,5 +799,5 @@ a {
 .skill-values {
     color: #555555;
     font-size: 0.9rem;
-    line-height: 1.1;
+    line-height: 1.3;
 }
