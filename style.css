@@ -752,8 +752,9 @@ a {
     font-size: 2.5rem;      /* Large title size */
     font-weight: 300;       /* Lighter weight for First Name */
     color: #222222;         /* Dark gray/black for First Name */
-    margin-top: 5px;
+    margin-top: 0;
     margin-bottom: 2px;
+    line-height: 1.1;
     letter-spacing: 0.5px;
 }
 
