@@ -644,7 +644,7 @@ a {
     flex-wrap: wrap;
     gap: 8px;
     font-size: 0.85rem;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .contact-header a {
@@ -666,8 +666,8 @@ a {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-top: 12px;
-    margin-bottom: 6px;
+    margin-top: 6px;
+    margin-bottom: 3px;
 }
 
 .section-header h2 {
@@ -692,7 +692,7 @@ a {
 .entry-row {
     display: grid;
     grid-template-columns: 1fr auto; /* Left side expands, right side shrinks to content */
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 8px;
 }
 
@@ -723,7 +723,7 @@ a {
 .entry-bullets li {
     font-size: 0.9rem;
     color: #444444;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 /* Right Column Styling */
@@ -731,7 +731,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 12px;
+    gap: 6px;
 }
 
 .entry-right .location {
