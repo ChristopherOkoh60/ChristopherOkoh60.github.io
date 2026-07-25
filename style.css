@@ -771,7 +771,6 @@ a {
     grid-template-columns: 20px 1fr; 
     column-gap: 20px;
     row-gap: 5px;
-    padding-left: 15px;
     align-items: start;
 }
 
