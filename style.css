@@ -764,41 +764,40 @@ a {
     color: #2B6CB0;         /* Blue accent (or use #2B6CB0 to match your blue) */
 }
 
-/* Container for the 2-column skills grid */
+/* Container for Skills */
 .skills-grid {
-    display: grid;
-    /* Column 1: Width fits label content (auto), Column 2: Fills remaining space (1fr) */
-    grid-template-columns: 1fr auto; 
-    column-gap: 20px;
-    row-gap: 5px;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    /* 1. Indent from the left to match the titles/bullets above */
+    padding-left: 0; /* Change to match your standard section padding if you have any */
+    
+    /* 2. Limit the width on the right to align with the training entries above */
+    max-width: 100%; 
 }
 
-/* Left Column: Bold, right-aligned category names */
+/* Individual skill row */
+.skill-row {
+    display: grid;
+    /* Fixed 130px width for labels on the left, remaining space for content on the right */
+    grid-template-columns: 130px 1fr; 
+    column-gap: 15px;
+    align-items: baseline;
+}
+
+/* Left Label: Left-aligned so it starts at the exact left margin */
 .skill-label {
     font-weight: 800;
     color: #111111;
-    text-align: right; /* Aligns text cleanly to the right */
+    text-align: left; /* Essential: aligns with the title text above */
     font-size: 0.95rem;
     line-height: 1.4;
 }
 
-/* Right Column: Lighter gray text for items list */
+/* Right Values: Gray text that wraps neatly */
 .skill-values {
     color: #555555;
     font-size: 0.95rem;
     line-height: 1.4;
-}
-
-/* Mobile Responsiveness (Stacks vertically on small screens) */
-@media (max-width: 600px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
-        row-gap: 6px;
-    }
-    
-    .skill-label {
-        text-align: left;
-        margin-top: 2px;
-    }
 }
