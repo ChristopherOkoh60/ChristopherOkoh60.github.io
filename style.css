@@ -666,7 +666,7 @@ a {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-top: 6px;
+    margin-top: 3px;
     margin-bottom: 3px;
 }
 
@@ -769,6 +769,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-top: 0;
     
     /* 1. Indent from the left to match the titles/bullets above */
     padding-left: 0; /* Change to match your standard section padding if you have any */
