@@ -667,7 +667,7 @@ a {
     align-items: center;
     gap: 12px;
     margin-top: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .section-header h2 {
@@ -693,26 +693,26 @@ a {
     display: grid;
     grid-template-columns: 1fr auto; /* Left side expands, right side shrinks to content */
     gap: 20px;
-    margin-bottom: 22px;
+    margin-bottom: 12px;
 }
 
 /* Left Column Styling */
 .entry-left .degree-title {
     font-size: 1.1rem;
     font-weight: 800;
-    margin: 0 0 2px 0;
+    margin: 0 0 1px 0;
     color: #111111;
 }
 
 .entry-left .specialization {
     font-size: 0.95rem;
-    margin: 0 0 4px 0;
+    margin: 0 0 2px 0;
 }
 
 .entry-left .institution {
     font-size: 0.95rem;
     color: #555555;
-    margin: 0 0 4px 0;
+    margin: 0 0 2px 0;
 }
 
 .entry-bullets {
