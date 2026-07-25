@@ -666,8 +666,8 @@ a {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-top: 25px;
-    margin-bottom: 12px;
+    margin-top: 12px;
+    margin-bottom: 6px;
 }
 
 .section-header h2 {
@@ -693,7 +693,7 @@ a {
     display: grid;
     grid-template-columns: 1fr auto; /* Left side expands, right side shrinks to content */
     gap: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 /* Left Column Styling */
