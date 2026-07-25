@@ -763,3 +763,42 @@ a {
     font-weight: 700;       /* Bold */
     color: #2B6CB0;         /* Blue accent (or use #2B6CB0 to match your blue) */
 }
+
+/* Container for the 2-column skills grid */
+.skills-grid {
+    display: grid;
+    /* Column 1: Width fits label content (auto), Column 2: Fills remaining space (1fr) */
+    grid-template-columns: minmax(130px, auto) 1fr; 
+    column-gap: 20px;
+    row-gap: 5px;
+    align-items: start;
+}
+
+/* Left Column: Bold, right-aligned category names */
+.skill-label {
+    font-weight: 800;
+    color: #111111;
+    text-align: right; /* Aligns text cleanly to the right */
+    font-size: 0.95rem;
+    line-height: 1;
+}
+
+/* Right Column: Lighter gray text for items list */
+.skill-values {
+    color: #555555;
+    font-size: 0.95rem;
+    line-height: 1;
+}
+
+/* Mobile Responsiveness (Stacks vertically on small screens) */
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        row-gap: 6px;
+    }
+    
+    .skill-label {
+        text-align: left;
+        margin-top: 8px;
+    }
+}
