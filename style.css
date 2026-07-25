@@ -792,12 +792,12 @@ a {
     color: #111111;
     text-align: left; /* Essential: aligns with the title text above */
     font-size: 0.95rem;
-    line-height: 1.4;
+    line-height: 1.1;
 }
 
 /* Right Values: Gray text that wraps neatly */
 .skill-values {
     color: #555555;
-    font-size: 0.95rem;
-    line-height: 1.4;
+    font-size: 0.9rem;
+    line-height: 1.1;
 }
