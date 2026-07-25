@@ -768,9 +768,9 @@ a {
 .skills-grid {
     display: grid;
     /* Column 1: Width fits label content (auto), Column 2: Fills remaining space (1fr) */
-    grid-template-columns: 80px 1fr; 
+    grid-template-columns: 40px 1fr; 
     column-gap: 15px;
-    row-gap: 10px;
+    row-gap: 5px;
     padding: 30px;
     align-items: start;
 }
