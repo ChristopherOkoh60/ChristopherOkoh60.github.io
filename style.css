@@ -753,7 +753,7 @@ a {
     font-weight: 300;       /* Lighter weight for First Name */
     color: #222222;         /* Dark gray/black for First Name */
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
     letter-spacing: 0.5px;
 }
 
