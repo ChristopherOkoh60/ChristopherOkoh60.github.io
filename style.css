@@ -768,7 +768,7 @@ a {
 .skills-grid {
     display: grid;
     /* Column 1: Width fits label content (auto), Column 2: Fills remaining space (1fr) */
-    grid-template-columns: 20px 1fr; 
+    grid-template-columns: 1fr auto; 
     column-gap: 20px;
     row-gap: 5px;
     align-items: start;
