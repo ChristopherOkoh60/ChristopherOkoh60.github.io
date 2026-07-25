@@ -781,7 +781,7 @@ a {
 .skill-row {
     display: grid;
     /* Fixed 130px width for labels on the left, remaining space for content on the right */
-    grid-template-columns: 130px 1fr; 
+    grid-template-columns: 100px 1fr; 
     column-gap: 15px;
     align-items: baseline;
 }
