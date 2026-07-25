@@ -603,3 +603,26 @@ a {
         gap: 24px;
     }
 }
+
+.pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #2B6CB0; /* Established blue */
+    color: #ffffff !important;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.pdf-btn:hover {
+    background-color: #1a4971; /* Darker blue shade on hover */
+    transform: translateY(-1px);
+}
+
+.pdf-btn i {
+    font-size: 1.1rem;
+}
