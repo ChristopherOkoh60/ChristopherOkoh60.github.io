@@ -673,7 +673,7 @@ a {
 .section-header h2 {
     font-size: 1.8rem;
     font-weight: 800;
-    color: #0000FF; /* Vibrant Blue Accent (or use #2B6CB0) */
+    color: #2B6CB0;
     margin: 0;
     white-space: nowrap;
     display: flex;
@@ -712,7 +712,7 @@ a {
 .entry-left .institution {
     font-size: 0.95rem;
     color: #555555;
-    margin: 0 0 8px 0;
+    margin: 0 0 4px 0;
 }
 
 .entry-bullets {
