@@ -802,3 +802,105 @@ a {
     font-size: 0.9rem;
     line-height: 1.3;
 }
+
+/* 2-Column Grid Wrapper */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 24px;                            /* Space between cards */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Individual Card Setup */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive 16:9 Video Box */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background-color: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Description Box */
+.project-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Keeps card heights balanced */
+    border-top: 1px solid #E2E8F0;
+}
+
+/* Date */
+.project-date {
+    font-size: 0.75rem;
+    color: #94A3B8;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* Title */
+.project-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #1E293B;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0 0 16px 0;
+}
+
+/* Description Text */
+.project-description {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #475569;
+    margin-bottom: 24px;
+    flex-grow: 1; /* Pushes the tags to the bottom of the card */
+}
+
+/* Tags Layout */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    font-size: 0.68rem;
+    font-weight: 500;
+    color: #64748B;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border: 1px solid #E2E8F0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #F8FAFC;
+}
+
+/* Mobile Responsiveness (Stacks into 1 column on mobile screens) */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
