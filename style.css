@@ -765,7 +765,7 @@ a {
 }
 
 /* Container for Skills */
-.skills-grid {
+/*.skills-grid {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -776,32 +776,32 @@ a {
     
     /* 2. Limit the width on the right to align with the training entries above */
     max-width: 100%; 
-}
+}*/
 
 /* Individual skill row */
-.skill-row {
+/*.skill-row {
     display: grid;
     /* Fixed 130px width for labels on the left, remaining space for content on the right */
     grid-template-columns: 130px 1fr; 
     column-gap: 15px;
     align-items: baseline;
-}
+}*/
 
 /* Left Label: Left-aligned so it starts at the exact left margin */
-.skill-label {
+/*.skill-label {
     font-weight: 800;
     color: #111111;
     text-align: left; /* Essential: aligns with the title text above */
     font-size: 0.95rem;
     line-height: 1.1;
-}
+}*/
 
 /* Right Values: Gray text that wraps neatly */
-.skill-values {
+/*.skill-values {
     color: #555555;
     font-size: 0.9rem;
     line-height: 1.3;
-}
+}*/
 
 /* 2-Column Grid Wrapper */
 .projects-grid {
