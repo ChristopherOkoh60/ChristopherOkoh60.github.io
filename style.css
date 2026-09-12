@@ -789,7 +789,7 @@ a {
 
 /* Left Label: Left-aligned so it starts at the exact left margin */
 /*.skill-label1 {
-    font-weight: 800;
+    font-weight: 500;
     color: #111111;
     text-align: left; /* Essential: aligns with the title text above */
     font-size: 0.95rem;
