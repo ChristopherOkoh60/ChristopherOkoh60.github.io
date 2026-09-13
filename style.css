@@ -813,16 +813,17 @@ a {
     padding: 20px 0;
 }
 
-/* Individual Card Setup */
+/* Card Container: 2-Column Side-by-Side Layout */
 .project-card {
-    display: grid;
-    grid-direction-columns: 1fr 1fr;
-    gap: 24px;
-    align-items: center;
+    display: flex;
+    flex-direction: row; /* Aligns Video (Left) and Content (Right) side-by-side */
+    align-items: stretch;
     border: 1px solid #E2E8F0;
     border-radius: 6px;
     background-color: #FFFFFF;
     overflow: hidden;
+    max-width: 1100px;
+    margin: 20px auto;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
@@ -831,6 +832,15 @@ a {
     position: relative;
     width: 100%;
     padding-top: 28.125%; /* 16:9 Aspect Ratio */
+    background-color: #000;
+}
+
+/* Left Column: Video Wrapper (50% Width) */
+.video-container {
+    flex: 1; /* Takes 50% width */
+    min-width: 0;
+    position: relative;
+    padding-top: 28.125%; /* Keeps 16:9 ratio when width is 50% */
     background-color: #000;
 }
 
@@ -843,13 +853,14 @@ a {
     border: none;
 }
 
-/* Description Box */
+/* Right Column: Description Box (50% Width) */
 .project-content {
+    flex: 1; /* Takes remaining 50% width */
     padding: 24px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Keeps card heights balanced */
-    border-top: 1px solid #E2E8F0;
+    justify-content: center;
+    border-left: 1px solid #E2E8F0; /* Clean dividing line */
 }
 
 /* Date */
