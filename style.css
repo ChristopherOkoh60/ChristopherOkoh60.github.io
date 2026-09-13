@@ -805,18 +805,20 @@ a {
 
 /* 2-Column Grid Wrapper */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
-    gap: 24px;                            /* Space between cards */
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;                            
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
 }
 
 /* Individual Card Setup */
 .project-card {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-direction-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
     border: 1px solid #E2E8F0;
     border-radius: 6px;
     background-color: #FFFFFF;
